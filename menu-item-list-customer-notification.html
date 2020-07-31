@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style/everypage.css" >
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body onload="availStuff2()">
+    <!-- header -->
+    <div class="hed">
+      <header>
+        <h1 class="left">truYum</h1>
+        <img class="left" src="images/fork1.jpeg" alt="" width="150" height="150">
+
+        <nav class="right">
+
+            <a href="cart.html" onclick="makeCart()"  class="right" id="cart2">Cart</a>
+            <a class="right" href="menu-item-list-customer.html" id="cust-menu">Menu</a>
+        </nav>
+      </header>
+    </div>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="menu-item-list-admin.html">Admin</a>
+      <a class="mdl-navigation__link" href="menu-item-list-customer.html">Customer</a>
+    </nav>
+    <!-- body -->
+    <div class="center-admin">
+      <h1 class="heading">Menu Items</h1>
+
+      <h2 class="green-cust">Item successfull added to your cart</h2>
+
+      <table id="menu_avail-not">
+        <tr>
+          <th class="nameAdmin">Name</th>
+          <th>Free Delivery</th>
+          <th class="priceAdmin">Price</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </table>
+      </div>
+
+
+
+    </center>
+    <input type="text" name="hidd2" value="" id="hidd2" style="visibility:hidden;"/>
+    <!-- footer -->
+    <footer class="foot">
+        <h3>Copyright &copy; 2019</h3>
+    </footer>
+  </body>
+</html>

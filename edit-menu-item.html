@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style/everypage.css" >
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
+  </head>
+  <body onload="edit()">
+    <!-- header -->
+    <div class="hed">
+      <header>
+        <h1 class="left">truYum</h1>
+        <img class="left" src="images/fork1.jpeg" alt="" width="150" height="150">
+
+        <nav class="right">
+            <a class="right" href="menu-item-list-admin.html">Menu</a>
+        </nav>
+      </header>
+    </div>
+
+
+    <!-- Editttt -->
+    <div class="center-admin">
+    <form  action="edit-menu-item-status.html" method="post">
+
+          <h1 class="heading">Edit Menu Item</h1>
+          <label for="name">Name:</label><br><br>
+          <input type="text" name="name" id="name"><br><br>
+          <div class="wholeInput">
+            <div class="priceDiv">
+              <label for="price">Price:</label>     <br><br>
+              <input type="number" name="price" id="price">
+            </div>
+            <div class="activeDiv">
+              <label for="Active">Active:</label><br><br>
+              <input type="radio" name="Active" id="Y">Yes
+              <input type="radio" name="Active" id="N">No
+            </div>
+
+            <div class="myDateDiv">
+              <label for="myDate">Date of Launch:</label><br><br>
+              <input type="date" id="myDate" >
+            </div>
+
+            <div class="catDiv">
+              <label for="cat">Category:</label><br><br>
+              <select class="catagory" id="cat">
+                <option value="Starter" id="Starter">Starter</option>
+                <option value="Dessert" id="Dessert">Dessert</option>
+                <option value="Main Course" id="Main Course" >Main Course</option>
+                <option value="Drinks" id="Drinks">Drinks</option>
+              </select>
+            </div>
+          </div>
+
+          <br><br>
+          <div class="freeDDiv">
+            <input type="checkbox" name="freeD" value="freeD" id="freeD">
+            <label for="freeD">Free Delivery:</label><br>
+
+          </div>
+
+          <br><br>
+          <div class="submitDiv">
+            <input type="submit" name="submit" id="save" value="Save" onclick="saveChanges()">
+          </div>
+
+        </center>
+
+    </form>
+  </div>
+
+
+
+<!-- footer -->
+    <footer class="foot">
+        <h3>Copyright &copy; 2019</h3>
+    </footer>
+  </body>
+</html>

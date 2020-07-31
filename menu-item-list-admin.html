@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style/everypage.css" >
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body onload="load()">
+    <div class="hed">
+      <header>
+        <h1 class="left">truYum</h1>
+        <img class="left" src="images/fork1.jpeg" alt="" width="150" height="150">
+
+        <nav class="right">
+            <a class="right" href="">Menu</a>
+        </nav>
+        <button type="button" name="button" class="right-st" onclick="start()" style="visibility:hidden;">Start</button>
+      </header>
+    </div>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="menu-item-list-admin.html">Admin</a>
+      <a class="mdl-navigation__link" href="menu-item-list-customer.html" onclick="getValues()">Customer</a>
+    </nav>
+    <div class="center-admin">
+
+      <h1 class="heading-admin">Menu Items</h1><br>
+      <table id="menu_admin">
+        <tr>
+          <th style='text-align: left;' class="nameAdmin">Name</th>
+          <th class="priceAdmin">Price</th>
+          <th >Active</th>
+          <th >Date of Launch</th>
+          <th >Category</th>
+          <th >Free Delivery</th>
+          <th >Action</th>
+        </tr>
+        <tr>
+          <td class="nameAdmin">Sandwich</td>
+          <td class="priceAdmin">Rs.99.00</td>
+          <td>yes</td>
+          <td>15/03/2017</td>
+          <td>Main Course</td>
+          <td>yes</td>
+          <td><a href="edit-menu-item.html" onclick="setObj(1)">edit</a></td>
+        </tr>
+        <tr>
+          <td class="nameAdmin">Burger</td>
+          <td class="priceAdmin">Rs.129.00</td>
+          <td >yes</td>
+          <td>23/12/2017</td>
+          <td>Main Course</td>
+          <td>no</td>
+          <td><a href="edit-menu-item.html" onclick="setObj(2)">edit</a></td>
+        </tr>
+        <tr>
+          <td class="nameAdmin">Pizza</td>
+          <td class="priceAdmin">Rs.149.00</td>
+          <td >yes</td>
+          <td>21/08/2017</td>
+          <td>Main Course</td>
+          <td>no</td>
+          <td><a href="edit-menu-item.html" onclick="setObj(3)">edit</a></td>
+        </tr>
+        <tr>
+          <td class="nameAdmin">French Fries</td>
+          <td class="priceAdmin">Rs.57.00</td>
+          <td>no</td>
+          <td>02/07/2017</td>
+          <td>Starter</td>
+          <td>yes</td>
+          <td><a href="edit-menu-item.html" onclick="setObj(4)">edit</a></td>
+        </tr>
+        <tr>
+          <td class="nameAdmin">Chocolate Brownie</td>
+          <td class="priceAdmin">Rs.32.00</td>
+          <td>yes</td>
+          <td>02/11/2022</td>
+          <td>Dessert</td>
+          <td>yes</td>
+          <td><a href="edit-menu-item.html" onclick="setObj(5)">edit</a></td>
+        </tr>
+      </table>
+
+
+  </div>
+    <footer class="foot">
+        <h3>Copyright &copy; 2019</h3>
+    </footer>
+
+  </body>
+</html>

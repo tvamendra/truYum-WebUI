@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style/everypage.css" >
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body onload="showCart()">
+    <!-- header -->
+    <div class="hed">
+      <header>
+        <h1 class="left">truYum</h1>
+        <img class="left" src="images/fork1.jpeg" alt="" width="150" height="150">
+
+        <nav class="right">
+
+            <a href="cart.html"  onclick="makeCart()"  class="right" id="cart">Cart</a>
+            <a class="right" href="menu-item-list-customer.html" id="cust-menu">Menu</a>
+
+        </nav>
+      </header>
+    </div>
+    <!-- body -->
+    <div class="center-admin">
+      <h1 class="heading">Cart</h1>
+      <table id="cart-table">
+        <tr>
+          <th class="nameAdmin">Name</th>
+          <th>Free Delivery</th>
+          <th class="priceAdmin">Price</th>
+        </tr>
+      </table>
+    </div>
+    <!-- footer -->
+    <footer class="foot">
+        <h3>Copyright &copy; 2019</h3>
+    </footer>
+  </body>
+</html>
